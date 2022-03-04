@@ -23,6 +23,7 @@ export const createContext = async ({
     prisma,
     user,
   }
+
   if (_user?.email) {
     const user = await prisma.user.findUnique({ where: { email: _user.email } })
     result.user = user

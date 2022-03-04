@@ -1,4 +1,35 @@
-# Next.js Advanced Starter 🚀
+# Start server
+
+Start db:
+
+`pscale connect soshace-testing dev`
+
+`pscale connect soshace-testing shadow --port 3307`
+
+Make a db migration
+
+`npx prisma migrate dev`
+
+# Main App features
+
+Login the user
+
+Show button "start test"
+
+When user clicks:
+
+- create new repository on github,
+- invite the user as editor
+- set timer to archive the repo after a while (ex 1 hour)
+- show user repo details - how to clone it
+- when time ends, archive the repo
+- show that time is up and no changes accepted
+- run the github action on repo - run unit tests and generate the result
+- send the evaluation result as event (telegram message, email or whatever)
+- user can be assigned to multiple repositories at the same time
+- user can view all assigned repositories and time limits for them
+
+<!-- # Next.js Advanced Starter 🚀
 
 An opinionated starter skeleton with advanced features for Next.js.
 
@@ -173,7 +204,6 @@ If you need additional rules or want to turn off specific rules just edit `.esli
 
 ### Adding new absolute import paths
 
-
 This will instruct Next.js to set up a new alias to your specific folder. If you try to import a file with @myalias now it will still throw an error however because we need to tell our IDE that this path actually exists:
 
 Add path in `.tsconfig`
@@ -199,4 +229,4 @@ If you're not yet familiar with some of the technologies used in this project he
 
 [Tailwind CSS course](https://tailwindcss.com/course): Free course by the creators of tailwind. Definitely check it out. It helps you "think" in tailwind. E.g before going through this course I styled my webapps by adding classes from the beginning. However, a much better approach is to 1) semantically structure your html without any classes and 2) to then add styling by using tailwind classes.
 
-[ESLint config guide](https://eslint.org/docs/user-guide/configuring): If you need to configure ESLint read their documentation (or at least the parts you need). You'll be surprised how much just makes sense after that.
+[ESLint config guide](https://eslint.org/docs/user-guide/configuring): If you need to configure ESLint read their documentation (or at least the parts you need). You'll be surprised how much just makes sense after that. -->
